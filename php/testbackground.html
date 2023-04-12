@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+        }
+        body{
+            background-image: url(imag1.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+        }
+        .container{
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box{
+        
+            padding: 17px;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .box1{
+            padding: 20px;
+        }
+        a{
+            padding: 20px;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        a:hover{
+            border-bottom: 5px solid red;
+            padding-bottom: 5px;
+            transition: 2s;
+        }
+        @keyframes example {
+            0%{
+                border-radius: 50%;
+                background-color: orangered;
+                color: aliceblue;
+            }
+            100%{
+                border-radius: 5px;
+            }
+        }
+        .containers{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 90vh;
+        }
+        .form{
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 15px 5px tomato;
+        }
+        .inputs{
+            padding: 5px;
+        }
+        input{
+            padding: 10px;
+            width: 400px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+            padding: 10px;
+            color: chartreuse;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            padding: 5px;
+            background: chartreuse;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .message{
+            width: 50%;
+            padding: 5px;
+        }
+        p{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Slam Book</h1>
+        </div>
+        <div class="box1">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Service</a>
+            <a href="">Contact Us</a>
+            <a href="">Help</a>
+        </div>
+    </div>
+    <div class="containers">
+        <div class="message">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit quibusdam minus aut beatae iure hic natus, molestias dolore laborum modi magni ducimus aspernatur deleniti dicta iusto asperiores reprehenderit. Ducimus in et veritatis, voluptatem doloribus laudantium laboriosam totam dolorum quo placeat sapiente debitis excepturi quidem cum fugiat ut aspernatur. Non maiores facere nihil laudantium hic sed expedita libero cum modi quos repudiandae ea impedit architecto, accusamus dolor asperiores quam cumque ducimus labore vel soluta recusandae! Esse libero quia vitae! Provident cumque debitis, unde, rerum ipsam ratione distinctio suscipit atque sint eaque laboriosam nostrum inventore dolores, exercitationem temporibus voluptate ut id!</p>
+
+        </div>
+        <div class="form">
+            <form action="" method="post">
+                <div class="heading">
+                    <h1>Login</h1>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="" id="" placeholder="Enter Name..">
+                </div>
+                <div class="inputs">
+                    <input type="text" name="" id="" placeholder="Enter Email..">
+                </div>
+                <div class="inputs">
+                    <input type="text" name="" id="" placeholder="Enter Password..">
+                </div>
+                <div class="inputs">
+                    <button type="submit">Log in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

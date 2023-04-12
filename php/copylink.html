@@ -1,0 +1,24 @@
+
+    <input type="text" name="name" id="name" value="hello worlds">
+    <button onclick="copytext()">Copy Text</button>
+    <div>
+        <button onclick="copylink()">copylink</button>
+    </div>
+    
+
+<script>
+    function copytext()
+    {
+        var text = document.getElementById("name");
+        text.select();
+        text.setSelectionRange(0,9999);
+        navigator.clipboard.writeText(text.value);
+        alert("Copy text : " + text.value);
+    }
+    function copylink()
+    {
+        var value="Raju KUmar p";
+        navigator.clipboard.writeText(value);
+        //alert("Copy Link : " + value);
+    }
+</script>

@@ -1,0 +1,26 @@
+<x-layout>
+    <div class="container-flud p-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 mt-5 p-5 text-center">
+                    <h2 class="text-info">Your Welcome!</h2>
+                    <h5 class="text-info">You can create own your Slam Book for memories yor funny moment in your life with his friend and families.</h5>
+                </div>
+                <div class="col-md-5 p-3">
+                    <h3 class="m-5 text-info text-center">User Registration</h3>
+                    <form action="/register" method="POST">
+                        @csrf
+                        <input type="text" name="name" id="name" class="form-control mt-3" placeholder="Please Enter Name..">
+                        <input type="email" name="email" id="email" class="form-control mt-3" placeholder="Please Enter email..">
+                        <input type="password" name="password" id="password" class="form-control mt-3" placeholder="Please Enter Password..">
+                        <input type="password" name="repassword" id="repassword" class="form-control mt-3" placeholder="Please Enter Confirm Password..">
+                        <button type="submit" class="btn bg-info text-white mt-3">Submit</button>
+                        <hr>
+                    </form>
+                    <p>Are you already registered? Go to <a href="/">Log In</a></p>
+                    <div class="p-3 mb-2 bg-info text-white text-center rounded border-2">Thank you!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</x-layout>
